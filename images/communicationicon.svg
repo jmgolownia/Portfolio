@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Copy Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-796.000000, -964.000000)" id="Copy-Icon">
+            <g sketch:type="MSLayerGroup" transform="translate(798.000000, 966.000000)">
+                <g id="Oval" transform="translate(0.705088, 1.014429)" stroke="#617890" stroke-width="5" fill="#C4DCF6" sketch:type="MSShapeGroup">
+                    <ellipse id="Oval-1" cx="67.0612491" cy="66.9065786" rx="67.0612491" ry="66.9065786"></ellipse>
+                </g>
+                <g id="Conversation" transform="translate(31.148787, 31.970563)" stroke="#368DE8" stroke-width="3" sketch:type="MSShapeGroup">
+                    <path d="M26.2576342,45.0492666 L45.7953958,45.0492666 C52.9629114,45.0492666 58.7875688,39.2290195 58.7875688,32.0493809 L58.7875688,12.9998857 C58.7875688,5.82018228 52.9707748,0 45.7953958,0 L12.992173,0 C5.82465744,0 0,5.82024706 0,12.9998857 L0,32.0493809 C0,39.2290843 5.81679397,45.0492666 12.992173,45.0492666 L17.0822919,45.0492666 L13.2481888,61.2817182 L26.2576342,45.0492666 Z" id="Rectangle-51" fill="#C4DCF6"></path>
+                    <path d="M17.0527791,15.567327 L45.8310793,15.567327" id="Line" stroke-linecap="square"></path>
+                    <path d="M17.0527791,23.6894106 L45.8310793,23.6894106" id="Line" stroke-linecap="square"></path>
+                    <path d="M15.6885567,31.8114943 L44.466857,31.8114943" id="Line" stroke-linecap="square"></path>
+                    <path d="M56.6479635,59.9202801 L39.9842702,59.9202801 C33.3580014,59.9202801 27.9845135,54.5465645 27.9845135,47.9177504 L27.9845135,32.0089507 C27.9845135,25.3790161 33.3569876,20.006421 39.9842702,20.006421 L67.7929392,20.006421 C74.419208,20.006421 79.792696,25.3801366 79.792696,32.0089507 L79.792696,47.9177504 C79.792696,54.547685 74.4202219,59.9202801 67.7929392,59.9202801 L64.7329356,59.9202801 L68.1473646,74.3023075 L56.6479635,59.9202801 Z" id="Rectangle-51" fill="#C4DCF6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
