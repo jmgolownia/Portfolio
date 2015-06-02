@@ -9440,7 +9440,7 @@ th.hide-for-touch {
   }
 }
 /* line 14, ../scss/_overrides.scss */
-.get-in-touch a, .main-hero a, #trip-sprout-casestudy .sass-wrapper .sass-foundation a {
+.get-in-touch a, .main-hero a, #trip-sprout-casestudy .sass-wrapper .sass-foundation a, #jottly-casestudy .jottly-live a {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -9453,114 +9453,239 @@ th.hide-for-touch {
   font-style: italic;
 }
 
-/* line 28, ../scss/_overrides.scss */
+/* 325px */
+/* 645px */
+/* 646 px */
+/* 1024 px */
+/* line 54, ../scss/_overrides.scss */
 body {
   font-size: 100%;
 }
 
-/* line 32, ../scss/_overrides.scss */
+/* line 58, ../scss/_overrides.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "museo-sans";
   font-weight: 300;
 }
 
-/* line 37, ../scss/_overrides.scss */
+/* line 63, ../scss/_overrides.scss */
 .contain-to-grid {
   box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 41, ../scss/_overrides.scss */
+/* line 67, ../scss/_overrides.scss */
 .top-bar {
-  height: 65px;
+  height: 55px;
 }
-/* line 43, ../scss/_overrides.scss */
-.top-bar h1 a {
-  font-size: 25px;
-  text-align: right;
+@media (max-width: 40.313em) {
+  /* line 67, ../scss/_overrides.scss */
+  .top-bar {
+    height: 85px;
+  }
+}
+/* line 72, ../scss/_overrides.scss */
+.top-bar .title-area {
+  margin-top: 8px;
+  padding-left: 15px;
+}
+@media (max-width: 40.313em) {
+  /* line 72, ../scss/_overrides.scss */
+  .top-bar .title-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+/* line 81, ../scss/_overrides.scss */
+.top-bar .title-area h1 {
+  font-size: 20px;
   font-weight: 300;
-}
-/* line 48, ../scss/_overrides.scss */
-.top-bar .name h1 a {
   color: #fff;
-  font-weight: 300;
 }
-/* line 52, ../scss/_overrides.scss */
-.top-bar h2 a {
-  font-size: 12px;
-  margin-top: -20px;
-  text-align: right;
+/* line 86, ../scss/_overrides.scss */
+.top-bar .title-area span {
+  font-weight: 100;
+  color: #C4DCF6;
 }
-/* line 57, ../scss/_overrides.scss */
+/* line 92, ../scss/_overrides.scss */
 .top-bar .top-bar-section .right {
+  float: right;
   margin-top: 6px;
 }
-
-/* line 62, ../scss/_overrides.scss */
-.see-more-work {
-  background-color: #C4DCF6;
+@media (max-width: 40.313em) {
+  /* line 92, ../scss/_overrides.scss */
+  .top-bar .top-bar-section .right {
+    margin-bottom: -35px;
+    margin-top: 0;
+    text-align: center;
+  }
+  /* line 99, ../scss/_overrides.scss */
+  .top-bar .top-bar-section .right li {
+    background: #617890;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -25px;
+  }
 }
-/* line 64, ../scss/_overrides.scss */
+
+/* line 109, ../scss/_overrides.scss */
+.see-more-work {
+  height: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #C4DCF6;
+  border-top: 3px solid #617890;
+}
+/* line 115, ../scss/_overrides.scss */
 .see-more-work h3 {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 15px;
+  font-weight: 100;
 }
-/* line 68, ../scss/_overrides.scss */
-.see-more-work .left-to-project, .see-more-work .right-to-project {
+/* line 120, ../scss/_overrides.scss */
+.see-more-work .left-to-project {
   padding-top: 10px;
 }
-/* line 71, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 120, ../scss/_overrides.scss */
+  .see-more-work .left-to-project {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 120, ../scss/_overrides.scss */
+  .see-more-work .left-to-project {
+    margin-bottom: 15px;
+  }
+}
+/* line 129, ../scss/_overrides.scss */
+.see-more-work .right-to-project {
+  padding-top: 10px;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 129, ../scss/_overrides.scss */
+  .see-more-work .right-to-project {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 129, ../scss/_overrides.scss */
+  .see-more-work .right-to-project {
+    padding-top: 5px;
+  }
+}
+/* line 138, ../scss/_overrides.scss */
 .see-more-work a {
   font-family: "museo-sans";
   font-style: italic;
   font-size: 1.125em;
   color: #617890;
 }
-/* line 76, ../scss/_overrides.scss */
+/* line 143, ../scss/_overrides.scss */
 .see-more-work a:hover {
   color: #000;
 }
-/* line 80, ../scss/_overrides.scss */
-.see-more-work hr {
-  border-color: #617890;
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 138, ../scss/_overrides.scss */
+  .see-more-work a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 138, ../scss/_overrides.scss */
+  .see-more-work a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
-/* line 85, ../scss/_overrides.scss */
+/* line 161, ../scss/_overrides.scss */
 .get-in-touch {
   height: auto;
   background-color: #C4DCF6;
   padding-top: 25px;
   padding-bottom: 40px;
+  border-top: 3px solid #617890;
 }
-/* line 90, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 161, ../scss/_overrides.scss */
+  .get-in-touch {
+    text-align: center;
+  }
+}
+/* line 170, ../scss/_overrides.scss */
+.get-in-touch .get-in-touch-content {
+  padding-left: 2.188em;
+}
+/* line 173, ../scss/_overrides.scss */
 .get-in-touch h2 {
   font-size: 2.5em;
   font-weight: 500;
 }
-/* line 94, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 173, ../scss/_overrides.scss */
+  .get-in-touch h2 {
+    font-size: 2.25em;
+  }
+}
+/* line 180, ../scss/_overrides.scss */
 .get-in-touch p {
   font-size: 1.25em;
 }
-/* line 97, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 180, ../scss/_overrides.scss */
+  .get-in-touch p {
+    font-size: 1.1em;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+/* line 188, ../scss/_overrides.scss */
 .get-in-touch span {
   font-weight: 500;
 }
-/* line 100, ../scss/_overrides.scss */
+/* line 191, ../scss/_overrides.scss */
 .get-in-touch a {
-  margin-top: 25%;
+  position: relative;
+  top: 75px;
   background-color: #368DE8;
 }
-/* line 104, ../scss/_overrides.scss */
+/* line 196, ../scss/_overrides.scss */
 .get-in-touch a:hover {
   color: #368DE8;
   background-color: #fff;
 }
+@media (max-width: 40.313em) {
+  /* line 191, ../scss/_overrides.scss */
+  .get-in-touch a {
+    top: 15px;
+  }
+}
+@media (max-width: 20em) {
+  /* line 191, ../scss/_overrides.scss */
+  .get-in-touch a {
+    top: 10px;
+  }
+}
 
-/* line 111, ../scss/_overrides.scss */
+/* line 209, ../scss/_overrides.scss */
 footer {
   height: 80px;
   background-color: #617890;
 }
-/* line 114, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 209, ../scss/_overrides.scss */
+  footer {
+    height: auto;
+  }
+}
+/* line 215, ../scss/_overrides.scss */
 footer h5 {
   font-size: .75em;
   font-weight: 100;
@@ -9568,83 +9693,230 @@ footer h5 {
   text-align: center;
   padding-top: 4.5%;
 }
-/* line 121, ../scss/_overrides.scss */
-footer .inline-list li {
+@media (max-width: 40.313em) {
+  /* line 215, ../scss/_overrides.scss */
+  footer h5 {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/* line 228, ../scss/_overrides.scss */
+footer .social li {
   padding-top: 1rem;
   margin-left: .5rem;
 }
+@media (max-width: 40.313em) {
+  /* line 232, ../scss/_overrides.scss */
+  footer .social {
+    display: table;
+  }
+}
 
 /*  Hero Unit  */
-/* line 130, ../scss/_overrides.scss */
+/* line 242, ../scss/_overrides.scss */
 .main-hero {
-  height: 425px;
+  height: 475px;
   background: url("../images/tripsprouthero.jpg") no-repeat center right;
   margin: 15px auto;
   overflow: hidden;
 }
-/* line 136, ../scss/_overrides.scss */
+@media (max-width: 20em) {
+  /* line 242, ../scss/_overrides.scss */
+  .main-hero {
+    height: 550px;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 242, ../scss/_overrides.scss */
+  .main-hero {
+    height: 600px;
+    margin: 0px auto;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 242, ../scss/_overrides.scss */
+  .main-hero {
+    height: 450px;
+  }
+}
+/* line 260, ../scss/_overrides.scss */
 .main-hero h3 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 500;
-  padding-top: 50px;
+  padding-top: 85px;
   padding-left: 5.35714286rem;
 }
-/* line 143, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 260, ../scss/_overrides.scss */
+  .main-hero h3 {
+    padding-left: 2%;
+    font-size: 3em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 260, ../scss/_overrides.scss */
+  .main-hero h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 20em) {
+  /* line 260, ../scss/_overrides.scss */
+  .main-hero h3 {
+    font-size: 2.1em;
+  }
+}
+/* line 280, ../scss/_overrides.scss */
 .main-hero h4 {
   font-size: 1.5em;
   font-weight: 100;
   padding-top: 1.28571429rem;
 }
-/* line 149, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 280, ../scss/_overrides.scss */
+  .main-hero h4 {
+    font-size: 1.3em;
+    padding-left: 2%;
+    max-width: 90%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 280, ../scss/_overrides.scss */
+  .main-hero h4 {
+    font-size: 1.25em;
+    text-align: center;
+    padding-bottom: 10%;
+    margin: auto 15px;
+  }
+}
+@media (max-width: 20em) {
+  /* line 280, ../scss/_overrides.scss */
+  .main-hero h4 {
+    font-size: 1.1em;
+    margin: auto 10px;
+  }
+}
+/* line 301, ../scss/_overrides.scss */
 .main-hero a {
   margin-top: 5%;
 }
-/* line 152, ../scss/_overrides.scss */
+/* line 304, ../scss/_overrides.scss */
 .main-hero a:hover {
   background-color: #368DE8;
 }
-/* line 157, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 301, ../scss/_overrides.scss */
+  .main-hero a {
+    font-size: 1.125em;
+    display: block;
+    margin: auto 25px;
+  }
+}
+@media (max-width: 20em) {
+  /* line 301, ../scss/_overrides.scss */
+  .main-hero a {
+    margin: auto 5px;
+  }
+}
+/* line 317, ../scss/_overrides.scss */
 .main-hero img {
   margin-top: 25px;
 }
+@media (min-width: 641px) and (max-width: 767px) {
+  /* line 322, ../scss/_overrides.scss */
+  .main-hero h3 {
+    font-size: 2.85em;
+    padding-top: 115px;
+  }
+  /* line 326, ../scss/_overrides.scss */
+  .main-hero h4 {
+    font-size: 1.275em;
+    max-width: 90%;
+    padding-top: 1.375em;
+  }
+  /* line 331, ../scss/_overrides.scss */
+  .main-hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+  }
+}
 
 /*  Project Thumbnails  */
-/* line 164, ../scss/_overrides.scss */
+/* line 341, ../scss/_overrides.scss */
 .project-1, .project-2, .project-3, .project-4 {
-  height: 225px;
+  height: 230px;
 }
 
-/* line 168, ../scss/_overrides.scss */
+/* line 345, ../scss/_overrides.scss */
 .project-1 {
+  background: url("../images/yumshark-snapshot.jpg") no-repeat bottom center;
   background-color: #FF8B00;
 }
-
-/* line 172, ../scss/_overrides.scss */
-.project-2 {
-  background-color: #617890;
+/* line 348, ../scss/_overrides.scss */
+.project-1 h3 {
+  color: #FF8B00;
 }
 
-/* line 176, ../scss/_overrides.scss */
-.project-3 {
+/* line 353, ../scss/_overrides.scss */
+.project-2 {
+  background: url("../images/jottly-snapshot.jpg") no-repeat bottom center;
   background-color: #87C145;
 }
-
-/* line 180, ../scss/_overrides.scss */
-.project-4 {
-  background-color: #4EA49D;
+/* line 356, ../scss/_overrides.scss */
+.project-2 h3 {
+  color: #87C145;
 }
 
-/* line 184, ../scss/_overrides.scss */
+/* line 361, ../scss/_overrides.scss */
+.project-3 {
+  background-color: #617890;
+}
+/* line 363, ../scss/_overrides.scss */
+.project-3 h3 {
+  color: #617890;
+}
+
+/* line 368, ../scss/_overrides.scss */
+.project-4 {
+  background: url("../images/author-snapshot.jpg") no-repeat bottom center;
+  background-color: #87D0D9;
+}
+/* line 371, ../scss/_overrides.scss */
+.project-4 h3 {
+  color: #87D0D9;
+}
+
+/* line 376, ../scss/_overrides.scss */
 .quarter {
   width: 25%;
   float: left;
 }
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 376, ../scss/_overrides.scss */
+  .quarter {
+    width: 50%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 376, ../scss/_overrides.scss */
+  .quarter {
+    width: 100%;
+  }
+}
 
-/* line 189, ../scss/_overrides.scss */
+/* line 387, ../scss/_overrides.scss */
 #image-overlay {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
   height: 100%;
+  padding-top: 5px;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
@@ -9652,8 +9924,26 @@ footer .inline-list li {
   -ms-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
+/* line 398, ../scss/_overrides.scss */
+#image-overlay h3 {
+  font-size: 2em;
+  font-weight: 500;
+  padding-top: 25px;
+}
+/* line 403, ../scss/_overrides.scss */
+#image-overlay h5 {
+  font-size: 0.875em;
+  font-weight: 100;
+  color: #e3e2e2;
+}
+/* line 408, ../scss/_overrides.scss */
+#image-overlay p {
+  color: #e3e2e2;
+  font-size: 0.938em;
+  padding-top: 15px;
+}
 
-/* line 201, ../scss/_overrides.scss */
+/* line 415, ../scss/_overrides.scss */
 .project-1:hover #image-overlay, .project-2:hover #image-overlay,
 .project-3:hover #image-overlay, .project-4:hover #image-overlay {
   opacity: 1;
@@ -9661,66 +9951,163 @@ footer .inline-list li {
 }
 
 /* Hello I'm Justin  */
-/* line 208, ../scss/_overrides.scss */
+/* line 422, ../scss/_overrides.scss */
 .hello {
   height: auto;
   padding-top: 50px;
   padding-bottom: 80px;
 }
-/* line 212, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 422, ../scss/_overrides.scss */
+  .hello {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+/* line 430, ../scss/_overrides.scss */
+.hello .hello-content {
+  padding-left: 2.188em;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 430, ../scss/_overrides.scss */
+  .hello .hello-content {
+    padding-left: 2.188em;
+    max-width: 85%;
+  }
+}
+/* line 437, ../scss/_overrides.scss */
 .hello h2 {
   font-size: 3.25em;
   color: #368DE8;
 }
-/* line 215, ../scss/_overrides.scss */
+/* line 440, ../scss/_overrides.scss */
 .hello h2 span {
   font-weight: 700;
 }
-/* line 219, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 437, ../scss/_overrides.scss */
+  .hello h2 {
+    font-size: 2.75em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 437, ../scss/_overrides.scss */
+  .hello h2 {
+    font-size: 2.5em;
+  }
+}
+/* line 450, ../scss/_overrides.scss */
 .hello p {
   font-size: 1.25em;
 }
-/* line 221, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 450, ../scss/_overrides.scss */
+  .hello p {
+    font-size: 1.025em;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    padding-top: 5%;
+  }
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 450, ../scss/_overrides.scss */
+  .hello p {
+    font-size: 1.125em;
+  }
+}
+/* line 461, ../scss/_overrides.scss */
 .hello p a {
   color: #368DE8;
 }
-/* line 224, ../scss/_overrides.scss */
+/* line 464, ../scss/_overrides.scss */
 .hello p span {
   font-weight: 700;
 }
-/* line 228, ../scss/_overrides.scss */
+/* line 468, ../scss/_overrides.scss */
 .hello ul {
   padding-top: 50px;
 }
-/* line 230, ../scss/_overrides.scss */
+/* line 470, ../scss/_overrides.scss */
 .hello ul li {
   padding-bottom: 15px;
 }
+/* line 474, ../scss/_overrides.scss */
+.hello .icons-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 480, ../scss/_overrides.scss */
+.hello .icons-small li {
+  width: 65px;
+  margin-left: 1.25rem;
+}
+@media (min-width: 40em) {
+  /* line 474, ../scss/_overrides.scss */
+  .hello .icons-small {
+    display: none;
+  }
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 488, ../scss/_overrides.scss */
+  .hello .icons-large {
+    padding-top: 35px;
+  }
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 492, ../scss/_overrides.scss */
+  .hello .icons-large li {
+    width: 115px;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 488, ../scss/_overrides.scss */
+  .hello .icons-large {
+    display: none;
+  }
+}
+@media (min-width: 646px) and (max-width: 754px) {
+  /* line 502, ../scss/_overrides.scss */
+  .hello .icons-large {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  /* line 505, ../scss/_overrides.scss */
+  .hello .icons-large li {
+    width: 100px;
+  }
+  /* line 509, ../scss/_overrides.scss */
+  .hello p {
+    font-size: 1.1em;
+  }
+}
 
 /** HERO UNIT **/
-/* line 239, ../scss/_overrides.scss */
+/* line 518, ../scss/_overrides.scss */
 .casestudy-hero {
   height: 800px;
   text-align: center;
   position: relative;
 }
-/* line 244, ../scss/_overrides.scss */
+/* line 523, ../scss/_overrides.scss */
 .casestudy-hero img {
   padding-top: 10%;
 }
-/* line 248, ../scss/_overrides.scss */
+/* line 527, ../scss/_overrides.scss */
 .casestudy-hero h2 {
   font-size: 3.25em;
   font-weight: 500;
   padding-top: 3%;
 }
-/* line 253, ../scss/_overrides.scss */
+/* line 532, ../scss/_overrides.scss */
 .casestudy-hero h3 {
   font-size: 1.75em;
   font-weight: 100;
   padding: 0, 50%, 10%, 50%;
 }
-/* line 259, ../scss/_overrides.scss */
+/* line 538, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration {
   height: 165px;
   background-color: rgba(97, 120, 144, 0.5);
@@ -9729,47 +10116,47 @@ footer .inline-list li {
   bottom: 0;
   left: 0;
 }
-/* line 266, ../scss/_overrides.scss */
+/* line 545, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration h4 {
   font-family: "museo-sans";
   font-style: italic;
   font-size: 1.25em;
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 272, ../scss/_overrides.scss */
+/* line 551, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration ul {
   display: inline-block;
   margin: 0 auto;
   padding-top: 25px;
 }
-/* line 277, ../scss/_overrides.scss */
+/* line 556, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration ul li img {
   height: 65px;
   width: auto;
 }
 
 /** HERO UNIT **/
-/* line 286, ../scss/_overrides.scss */
+/* line 565, ../scss/_overrides.scss */
 .tripsprout-bg {
   background: url("../images/tripsproutherolarge.jpg") no-repeat top center;
   background-size: cover;
 }
 
 /** MAIN ARTICLE **/
-/* line 292, ../scss/_overrides.scss */
+/* line 571, ../scss/_overrides.scss */
 #trip-sprout-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 294, ../scss/_overrides.scss */
+/* line 573, ../scss/_overrides.scss */
 #trip-sprout-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 298, ../scss/_overrides.scss */
+/* line 577, ../scss/_overrides.scss */
 #trip-sprout-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 302, ../scss/_overrides.scss */
+/* line 581, ../scss/_overrides.scss */
 #trip-sprout-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -9779,20 +10166,20 @@ footer .inline-list li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 311, ../scss/_overrides.scss */
+/* line 590, ../scss/_overrides.scss */
 #trip-sprout-casestudy p {
   font-size: 22px;
   padding-bottom: 3.25%;
 }
-/* line 315, ../scss/_overrides.scss */
+/* line 594, ../scss/_overrides.scss */
 #trip-sprout-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 318, ../scss/_overrides.scss */
+/* line 597, ../scss/_overrides.scss */
 #trip-sprout-casestudy .italic-span {
   font-style: italic;
 }
-/* line 321, ../scss/_overrides.scss */
+/* line 600, ../scss/_overrides.scss */
 #trip-sprout-casestudy ul {
   font-size: 20px;
   font-family: "museo-sans";
@@ -9800,62 +10187,62 @@ footer .inline-list li {
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 327, ../scss/_overrides.scss */
+/* line 606, ../scss/_overrides.scss */
 #trip-sprout-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 331, ../scss/_overrides.scss */
+/* line 610, ../scss/_overrides.scss */
 #trip-sprout-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
 }
-/* line 336, ../scss/_overrides.scss */
+/* line 615, ../scss/_overrides.scss */
 #trip-sprout-casestudy .budget-dilemma-hero {
   background: url("../images/budget-dilemma-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 550px;
 }
-/* line 342, ../scss/_overrides.scss */
+/* line 621, ../scss/_overrides.scss */
 #trip-sprout-casestudy .budget-dilemma-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 345, ../scss/_overrides.scss */
+/* line 624, ../scss/_overrides.scss */
 #trip-sprout-casestudy .teacher-designed-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
 }
-/* line 348, ../scss/_overrides.scss */
+/* line 627, ../scss/_overrides.scss */
 #trip-sprout-casestudy .sass-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 352, ../scss/_overrides.scss */
+/* line 631, ../scss/_overrides.scss */
 #trip-sprout-casestudy .sass-wrapper .sass-foundation a:hover {
   background-color: #368DE8;
 }
 
 /** HERO UNIT **/
-/* line 361, ../scss/_overrides.scss */
+/* line 640, ../scss/_overrides.scss */
 .yumshark-bg {
   background: url("../images/yumshark-hero.jpg") no-repeat bottom center;
   background-size: cover;
 }
 
 /** MAIN ARTICLE **/
-/* line 367, ../scss/_overrides.scss */
+/* line 646, ../scss/_overrides.scss */
 #yumshark-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 369, ../scss/_overrides.scss */
+/* line 648, ../scss/_overrides.scss */
 #yumshark-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 373, ../scss/_overrides.scss */
+/* line 652, ../scss/_overrides.scss */
 #yumshark-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 377, ../scss/_overrides.scss */
+/* line 656, ../scss/_overrides.scss */
 #yumshark-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -9865,20 +10252,20 @@ footer .inline-list li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 386, ../scss/_overrides.scss */
+/* line 665, ../scss/_overrides.scss */
 #yumshark-casestudy p {
   font-size: 22px;
   padding-bottom: 3.25%;
 }
-/* line 390, ../scss/_overrides.scss */
+/* line 669, ../scss/_overrides.scss */
 #yumshark-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 393, ../scss/_overrides.scss */
+/* line 672, ../scss/_overrides.scss */
 #yumshark-casestudy .italic-span {
   font-style: italic;
 }
-/* line 396, ../scss/_overrides.scss */
+/* line 675, ../scss/_overrides.scss */
 #yumshark-casestudy ul {
   font-size: 20px;
   font-family: "museo-sans";
@@ -9886,32 +10273,170 @@ footer .inline-list li {
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 402, ../scss/_overrides.scss */
+/* line 681, ../scss/_overrides.scss */
 #yumshark-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 406, ../scss/_overrides.scss */
+/* line 685, ../scss/_overrides.scss */
 #yumshark-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
 }
-/* line 411, ../scss/_overrides.scss */
+/* line 690, ../scss/_overrides.scss */
 #yumshark-casestudy .research-discovery-hero {
   background: url("../images/research-discovery-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 550px;
 }
-/* line 417, ../scss/_overrides.scss */
+/* line 696, ../scss/_overrides.scss */
 #yumshark-casestudy .research-discovery-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
 }
-/* line 420, ../scss/_overrides.scss */
+/* line 699, ../scss/_overrides.scss */
 #yumshark-casestudy .prototyping-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 423, ../scss/_overrides.scss */
+/* line 702, ../scss/_overrides.scss */
 #yumshark-casestudy .iteration-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
+}
+
+/** HERO UNIT **/
+/* line 709, ../scss/_overrides.scss */
+.jottly-bg {
+  background: url("../images/jottlyhero.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
+/** MAIN ARTICLE **/
+/* line 715, ../scss/_overrides.scss */
+#jottly-casestudy .project-intro {
+  padding-top: 5%;
+}
+/* line 717, ../scss/_overrides.scss */
+#jottly-casestudy .project-intro p {
+  font-size: 1.625em;
+}
+/* line 721, ../scss/_overrides.scss */
+#jottly-casestudy section {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+/* line 725, ../scss/_overrides.scss */
+#jottly-casestudy h4 {
+  font-family: "museo-sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+/* line 734, ../scss/_overrides.scss */
+#jottly-casestudy p {
+  font-size: 22px;
+  padding-bottom: 3.25%;
+}
+/* line 738, ../scss/_overrides.scss */
+#jottly-casestudy .bold-span {
+  font-weight: 500;
+}
+/* line 741, ../scss/_overrides.scss */
+#jottly-casestudy .italic-span {
+  font-style: italic;
+}
+/* line 744, ../scss/_overrides.scss */
+#jottly-casestudy ul {
+  font-size: 20px;
+  font-family: "museo-sans";
+  font-weight: 500;
+  max-width: 95%;
+  padding-left: 7%;
+}
+/* line 750, ../scss/_overrides.scss */
+#jottly-casestudy ul li {
+  padding-bottom: 10px;
+}
+/* line 754, ../scss/_overrides.scss */
+#jottly-casestudy img {
+  padding-top: 3.25%;
+  padding-bottom: 6.5%;
+  width: 100%;
+}
+/* line 759, ../scss/_overrides.scss */
+#jottly-casestudy .jottly-intro-wrapper {
+  background-color: rgba(97, 120, 144, 0.3);
+}
+/* line 762, ../scss/_overrides.scss */
+#jottly-casestudy .jottly-wireframe-wrapper {
+  background-color: rgba(97, 120, 144, 0.4);
+}
+/* line 767, ../scss/_overrides.scss */
+#jottly-casestudy .jottly-live a:hover {
+  background-color: #368DE8;
+}
+
+/** HERO UNIT **/
+/* line 775, ../scss/_overrides.scss */
+.smt-bg {
+  background: url("../images/smthero-2.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
+/** MAIN ARTICLE **/
+/* line 781, ../scss/_overrides.scss */
+#smt-casestudy .project-intro {
+  padding-top: 5%;
+}
+/* line 783, ../scss/_overrides.scss */
+#smt-casestudy .project-intro p {
+  font-size: 1.625em;
+}
+/* line 787, ../scss/_overrides.scss */
+#smt-casestudy section {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+/* line 791, ../scss/_overrides.scss */
+#smt-casestudy h4 {
+  font-family: "museo-sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+/* line 800, ../scss/_overrides.scss */
+#smt-casestudy p {
+  font-size: 22px;
+  padding-bottom: 3.25%;
+}
+/* line 804, ../scss/_overrides.scss */
+#smt-casestudy .bold-span {
+  font-weight: 500;
+}
+/* line 807, ../scss/_overrides.scss */
+#smt-casestudy .italic-span {
+  font-style: italic;
+}
+/* line 810, ../scss/_overrides.scss */
+#smt-casestudy ul {
+  font-size: 20px;
+  font-family: "museo-sans";
+  font-weight: 100;
+  max-width: 95%;
+  padding-left: 7%;
+}
+/* line 816, ../scss/_overrides.scss */
+#smt-casestudy ul li {
+  padding-bottom: 10px;
+}
+/* line 820, ../scss/_overrides.scss */
+#smt-casestudy img {
+  padding-top: 3.25%;
+  padding-bottom: 6.5%;
+  width: 100%;
 }

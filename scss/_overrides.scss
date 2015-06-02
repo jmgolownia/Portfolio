@@ -1,4 +1,4 @@
-//VARIABLES
+//GENERAL VARIABLES
 
 //Colors
 $slate-blue: #617890;
@@ -24,6 +24,32 @@ $alt-font: "museo-sans";
   font-style: italic;
 }
 
+//MEDIA QUERY VARIABLES
+
+$smallmobile-width: 20em; /* 325px */
+$mobile-width: 40.313em; /* 645px */
+$tablet-min: 40.375em; /* 646 px */
+$tablet-max: 64em; /* 1024 px */
+
+@mixin small-mobile {
+  @media (max-width: #{$smallmobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+
 // GLOBAL PAGE STYLES
 body {
   font-size: 100%;
@@ -39,34 +65,75 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .top-bar {
-  height: 65px;
-  h1 a {
-    font-size: 25px;
-    text-align: right;
-    font-weight: 300;
+  height: 55px;
+  @include mobile {
+    height: 85px;
   }
-  .name h1 a {
+  .title-area {
+    margin-top: 8px;
+    padding-left: 15px;
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+    }
+    h1 {
+    font-size: 20px;
+    font-weight: 300;
     color: #fff;
-    font-weight: 300;
+    }
+    span {
+      font-weight: 100;
+      color: $sky-blue;
+    }
   }
-  h2 a {
-    font-size: 12px;
-    margin-top: -20px;
-    text-align: right;
-  }
+
   .top-bar-section .right {
+    float: right;
     margin-top: 6px;
+    @include mobile {
+      margin-bottom: -35px;
+      margin-top: 0;
+      text-align: center;
+      li {
+        background: $slate-blue;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: -25px;
+      }
+    }
   }
 }
 
 .see-more-work {
+  height: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: $sky-blue;
+  border-top: 3px solid $slate-blue;
   h3 {
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 15px;
+    font-weight: 100;
   }
-  .left-to-project, .right-to-project {
+  .left-to-project {
     padding-top: 10px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+  .right-to-project {
+    padding-top: 10px;
+    @include tablet {
+      padding-top: 5px;
+    }
+    @include mobile {
+      padding-top: 5px;
+    }
   }
   a {
     font-family: $alt-font;
@@ -76,9 +143,18 @@ h1, h2, h3, h4, h5, h6, p {
     &:hover {
       color: #000;
     }
-  }
-  hr {
-    border-color: $slate-blue;
+    @include tablet {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @include mobile {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }
 
@@ -87,23 +163,45 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: $sky-blue;
   padding-top: 25px;
   padding-bottom: 40px;
+  border-top: 3px solid $slate-blue;
+  @include mobile {
+    text-align: center;
+  }
+  .get-in-touch-content {
+    padding-left: 2.188em;
+  }
   h2 {
     font-size: 2.5em;
     font-weight: 500;
+    @include mobile {
+      font-size: 2.25em;
+    }
   }
   p {
     font-size: 1.25em;
+    @include mobile {
+      font-size: 1.1em;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
   }
   span {
     font-weight: 500;
   }
   a {
     @extend %primary-button;
-    margin-top: 25%;
+    position: relative;
+    top: 75px;
     background-color: $bright-blue;
     &:hover {
       color: $bright-blue;
       background-color: #fff;
+    }
+    @include mobile {
+      top: 15px;
+    }
+    @include small-mobile {
+      top: 10px;
     }
   }
 }
@@ -111,16 +209,30 @@ h1, h2, h3, h4, h5, h6, p {
 footer {
   height: 80px;
   background-color: $slate-blue;
+  @include mobile {
+    height: auto;
+  }
   h5 {
     font-size: .75em;
     font-weight: 100;
     color: $sky-blue;
     text-align: center;
     padding-top: 4.5%;
+    @include mobile {
+      padding-top: 1%;
+      padding-bottom: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
-  .inline-list li {
+  .social li {
     padding-top: 1rem;
     margin-left: .5rem;
+  }
+  .social {
+    @include mobile {
+      display: table;
+    }
   }
 }
 
@@ -128,22 +240,62 @@ footer {
 
 /*  Hero Unit  */
 .main-hero {
-  height: 425px;
+  height: 475px;
   background: url("../images/tripsprouthero.jpg") no-repeat center right;
   margin: 15px auto;
   overflow: hidden;
+  @include small-mobile {
+    height: 550px;
+  }
+  @include mobile {
+    height: 600px;
+    margin: 0px auto;
+    background-position: center;
+    background-size: cover;
+  }
+  @include tablet {
+    height: 450px;
+  }
 
   h3 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 85px;
     padding-left: 5.35714286rem;
+    @include tablet {
+      padding-left: 2%;
+      font-size: 3em;
+    }
+    @include mobile {
+      text-align: center;
+      font-size: 2.5em;
+      padding-top: 50px;
+      padding-left: 0;
+    }
+    @include small-mobile {
+      font-size: 2.1em;
+    }
   }
 
   h4 {
     font-size: 1.5em;
     font-weight: 100;
     padding-top: 1.28571429rem;
+    @include tablet {
+      font-size: 1.3em;
+      padding-left: 2%;
+      max-width: 90%;
+    }
+    @include mobile {
+      font-size: 1.25em;
+      text-align: center;
+      padding-bottom: 10%;
+      margin: auto 15px;
+    }
+    @include small-mobile {
+      font-size: 1.1em;
+      margin: auto 10px;
+    }
   }
 
   a {
@@ -152,50 +304,112 @@ footer {
     &:hover {
       background-color: $bright-blue;
     }
+    @include mobile {
+      font-size: 1.125em;
+      display: block;
+      margin: auto 25px;
+    }
+    @include small-mobile {
+      margin: auto 5px;
+    }
   }
 
   img {
     margin-top: 25px;
+  }
+
+  @media (min-width: 641px) and (max-width: 767px) {
+    h3 {
+      font-size: 2.85em;
+      padding-top: 115px;
+    }
+    h4 {
+      font-size: 1.275em;
+      max-width: 90%;
+      padding-top: 1.375em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 35px;
+    }
   }
 }
 
 /*  Project Thumbnails  */
 
 .project-1, .project-2, .project-3, .project-4 {
-  height: 225px;
+  height: 230px;
 }
 
 .project-1 {
+  background: url('../images/yumshark-snapshot.jpg') no-repeat bottom center;
   background-color: #FF8B00;
+  h3 {
+    color: #FF8B00;
+  }
 }
 
 .project-2 {
-  background-color: $slate-blue;
+  background: url('../images/jottly-snapshot.jpg') no-repeat bottom center;
+  background-color: #87C145;
+  h3 {
+    color: #87C145;
+  }
 }
 
 .project-3 {
-  background-color: #87C145;
+  background-color: $slate-blue;
+  h3 {
+    color: $slate-blue;
+  }
 }
 
 .project-4 {
-  background-color: #4EA49D;
+  background: url('../images/author-snapshot.jpg') no-repeat bottom center;
+  background-color: #87D0D9;
+  h3 {
+    color: #87D0D9;
+  }
 }
 
 .quarter {
   width: 25%;
   float: left;
+  @include tablet {
+    width: 50%;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 #image-overlay {  
   background: rgba(0,0,0,.75);
   text-align: center;
   height: 100%;
+  padding-top: 5px;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
+  h3 {
+    font-size: 2em;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  h5 {
+    font-size: 0.875em;
+    font-weight: 100;
+    color: #e3e2e2;
+  }
+  p {
+    color: #e3e2e2;
+    font-size: 0.938em;
+    padding-top: 15px;
+  }
 }
 
 .project-1:hover #image-overlay, .project-2:hover #image-overlay, 
@@ -209,15 +423,41 @@ footer {
   height: auto;
   padding-top: 50px;
   padding-bottom: 80px;
+  @include mobile {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .hello-content {
+    padding-left: 2.188em;
+    @include tablet {
+      padding-left: 2.188em;
+      max-width: 85%;
+    }
+  }
   h2 {
     font-size: 3.25em;
     color: $bright-blue;
     span {
       font-weight: 700;
     }
+    @include tablet {
+      font-size: 2.75em;
+    }
+    @include mobile {
+      font-size: 2.5em;
+    }
   }
   p {
     font-size: 1.25em;
+    @include mobile {
+      font-size: 1.025em;
+      margin-left: 5.5%;
+      margin-right: 5.5%;
+      padding-top: 5%;
+    }
+    @include tablet {
+      font-size: 1.125em;
+    }
     a {
       color: $bright-blue;
     }
@@ -229,6 +469,45 @@ footer {
     padding-top: 50px;
     li {
       padding-bottom: 15px;
+    }
+  }
+  .icons-small {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      width: 65px;
+      margin-left: 1.25rem;
+    }
+    @media (min-width: 40em) {
+      display: none;
+    }
+  }
+  .icons-large {
+    @include tablet {
+      padding-top: 35px;
+    }
+    li {
+      @include tablet {
+        width: 115px;
+      }
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  @media (min-width: 646px) and (max-width: 754px) {
+    .icons-large {
+      padding-left: 0;
+      padding-top: 50px;
+      li {
+        width: 100px;
+      }
+    }
+    p {
+      font-size: 1.1em;
     }
   }
 }
@@ -425,26 +704,124 @@ footer {
   }
 }
 
+//JOTTLY PROJECT
+/** HERO UNIT **/
+.jottly-bg {
+  background: url("../images/jottlyhero.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+/** MAIN ARTICLE **/
+#jottly-casestudy {
+  .project-intro {
+    padding-top: 5%;
+    p {
+      font-size: 1.625em;
+    }
+  }
+  section {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  h4 {
+    font-family: $alt-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  p {
+    font-size: 22px;
+    padding-bottom: 3.25%;
+  }
+  .bold-span {
+    font-weight: 500;
+  }
+  .italic-span {
+    font-style: italic;
+  }
+  ul {
+    font-size: 20px;
+    font-family: $main-font;
+    font-weight: 500;
+    max-width: 95%;
+    padding-left: 7%;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+  img {
+    padding-top: 3.25%;
+    padding-bottom: 6.5%;
+    width: 100%;
+  }
+  .jottly-intro-wrapper {
+    background-color: rgba($slate-blue, .3);
+  }
+  .jottly-wireframe-wrapper {
+    background-color: rgba($slate-blue, .4);
+  }
+  .jottly-live a {
+      @extend %primary-button;
+      &:hover {
+      background-color: $bright-blue;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//SMT PROJECT
+/** HERO UNIT **/
+.smt-bg {
+  background: url("../images/smthero-2.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+/** MAIN ARTICLE **/
+#smt-casestudy {
+  .project-intro {
+    padding-top: 5%;
+    p {
+      font-size: 1.625em;
+    }
+  }
+  section {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  h4 {
+    font-family: $alt-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  p {
+    font-size: 22px;
+    padding-bottom: 3.25%;
+  }
+  .bold-span {
+    font-weight: 500;
+  }
+  .italic-span {
+    font-style: italic;
+  }
+  ul {
+    font-size: 20px;
+    font-family: $main-font;
+    font-weight: 100;
+    max-width: 95%;
+    padding-left: 7%;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+  img {
+    padding-top: 3.25%;
+    padding-bottom: 6.5%;
+    width: 100%;
+  }
+}
 
 
