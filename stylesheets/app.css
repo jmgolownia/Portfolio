@@ -9440,14 +9440,14 @@ th.hide-for-touch {
   }
 }
 /* line 14, ../scss/_overrides.scss */
-.get-in-touch a, .main-hero a, #trip-sprout-casestudy .sass-wrapper .sass-foundation a, #jottly-casestudy .jottly-live a {
+.get-in-touch a, .main-hero a, .submit-button, #trip-sprout-casestudy .sass-wrapper .sass-foundation a, #jottly-casestudy .jottly-live a {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px none;
   background-color: rgba(97, 120, 144, 0.5);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-  font-family: "museo-sans";
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 1.250em;
   font-style: italic;
@@ -9464,7 +9464,7 @@ body {
 
 /* line 58, ../scss/_overrides.scss */
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "museo-sans";
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -9503,24 +9503,34 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 300;
   color: #fff;
 }
-/* line 86, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 81, ../scss/_overrides.scss */
+  .top-bar .title-area h1 {
+    padding-left: 10px;
+  }
+}
+/* line 89, ../scss/_overrides.scss */
 .top-bar .title-area span {
   font-weight: 100;
   color: #C4DCF6;
 }
-/* line 92, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 .top-bar .top-bar-section .right {
   float: right;
   margin-top: 6px;
 }
+/* line 98, ../scss/_overrides.scss */
+.top-bar .top-bar-section .right li {
+  padding: auto 10px;
+}
 @media (max-width: 40.313em) {
-  /* line 92, ../scss/_overrides.scss */
+  /* line 95, ../scss/_overrides.scss */
   .top-bar .top-bar-section .right {
     margin-bottom: -35px;
     margin-top: 0;
     text-align: center;
   }
-  /* line 99, ../scss/_overrides.scss */
+  /* line 105, ../scss/_overrides.scss */
   .top-bar .top-bar-section .right li {
     background: #617890;
     display: inline-block;
@@ -9529,7 +9539,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-/* line 109, ../scss/_overrides.scss */
+/* line 115, ../scss/_overrides.scss */
 .see-more-work {
   height: auto;
   padding-top: 3%;
@@ -9537,57 +9547,57 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #C4DCF6;
   border-top: 3px solid #617890;
 }
-/* line 115, ../scss/_overrides.scss */
+/* line 121, ../scss/_overrides.scss */
 .see-more-work h3 {
   text-align: center;
   padding-bottom: 15px;
   font-weight: 100;
 }
-/* line 120, ../scss/_overrides.scss */
+/* line 126, ../scss/_overrides.scss */
 .see-more-work .left-to-project {
   padding-top: 10px;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 120, ../scss/_overrides.scss */
+  /* line 126, ../scss/_overrides.scss */
   .see-more-work .left-to-project {
     margin-bottom: 15px;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 120, ../scss/_overrides.scss */
+  /* line 126, ../scss/_overrides.scss */
   .see-more-work .left-to-project {
     margin-bottom: 15px;
   }
 }
-/* line 129, ../scss/_overrides.scss */
+/* line 135, ../scss/_overrides.scss */
 .see-more-work .right-to-project {
   padding-top: 10px;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 129, ../scss/_overrides.scss */
+  /* line 135, ../scss/_overrides.scss */
   .see-more-work .right-to-project {
     padding-top: 5px;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 129, ../scss/_overrides.scss */
+  /* line 135, ../scss/_overrides.scss */
   .see-more-work .right-to-project {
     padding-top: 5px;
   }
 }
-/* line 138, ../scss/_overrides.scss */
+/* line 144, ../scss/_overrides.scss */
 .see-more-work a {
   font-family: "museo-sans";
   font-style: italic;
   font-size: 1.125em;
   color: #617890;
 }
-/* line 143, ../scss/_overrides.scss */
+/* line 149, ../scss/_overrides.scss */
 .see-more-work a:hover {
   color: #000;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 138, ../scss/_overrides.scss */
+  /* line 144, ../scss/_overrides.scss */
   .see-more-work a {
     display: flex;
     align-content: center;
@@ -9596,7 +9606,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 @media (max-width: 40.313em) {
-  /* line 138, ../scss/_overrides.scss */
+  /* line 144, ../scss/_overrides.scss */
   .see-more-work a {
     display: flex;
     align-content: center;
@@ -9605,7 +9615,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-/* line 161, ../scss/_overrides.scss */
+/* line 167, ../scss/_overrides.scss */
 .get-in-touch {
   height: auto;
   background-color: #C4DCF6;
@@ -9614,78 +9624,78 @@ h1, h2, h3, h4, h5, h6, p {
   border-top: 3px solid #617890;
 }
 @media (max-width: 40.313em) {
-  /* line 161, ../scss/_overrides.scss */
+  /* line 167, ../scss/_overrides.scss */
   .get-in-touch {
     text-align: center;
   }
 }
-/* line 170, ../scss/_overrides.scss */
+/* line 176, ../scss/_overrides.scss */
 .get-in-touch .get-in-touch-content {
   padding-left: 2.188em;
 }
-/* line 173, ../scss/_overrides.scss */
+/* line 179, ../scss/_overrides.scss */
 .get-in-touch h2 {
   font-size: 2.5em;
   font-weight: 500;
 }
 @media (max-width: 40.313em) {
-  /* line 173, ../scss/_overrides.scss */
+  /* line 179, ../scss/_overrides.scss */
   .get-in-touch h2 {
     font-size: 2.25em;
   }
 }
-/* line 180, ../scss/_overrides.scss */
+/* line 186, ../scss/_overrides.scss */
 .get-in-touch p {
   font-size: 1.25em;
 }
 @media (max-width: 40.313em) {
-  /* line 180, ../scss/_overrides.scss */
+  /* line 186, ../scss/_overrides.scss */
   .get-in-touch p {
     font-size: 1.1em;
     margin-left: 3%;
     margin-right: 3%;
   }
 }
-/* line 188, ../scss/_overrides.scss */
+/* line 194, ../scss/_overrides.scss */
 .get-in-touch span {
   font-weight: 500;
 }
-/* line 191, ../scss/_overrides.scss */
+/* line 197, ../scss/_overrides.scss */
 .get-in-touch a {
   position: relative;
   top: 75px;
   background-color: #368DE8;
 }
-/* line 196, ../scss/_overrides.scss */
+/* line 202, ../scss/_overrides.scss */
 .get-in-touch a:hover {
   color: #368DE8;
   background-color: #fff;
 }
 @media (max-width: 40.313em) {
-  /* line 191, ../scss/_overrides.scss */
+  /* line 197, ../scss/_overrides.scss */
   .get-in-touch a {
     top: 15px;
   }
 }
 @media (max-width: 20em) {
-  /* line 191, ../scss/_overrides.scss */
+  /* line 197, ../scss/_overrides.scss */
   .get-in-touch a {
     top: 10px;
   }
 }
 
-/* line 209, ../scss/_overrides.scss */
+/* line 215, ../scss/_overrides.scss */
 footer {
   height: 80px;
   background-color: #617890;
 }
 @media (max-width: 40.313em) {
-  /* line 209, ../scss/_overrides.scss */
+  /* line 215, ../scss/_overrides.scss */
   footer {
     height: auto;
   }
 }
-/* line 215, ../scss/_overrides.scss */
+/* line 221, ../scss/_overrides.scss */
 footer h5 {
   font-size: .75em;
   font-weight: 100;
@@ -9694,7 +9704,7 @@ footer h5 {
   padding-top: 4.5%;
 }
 @media (max-width: 40.313em) {
-  /* line 215, ../scss/_overrides.scss */
+  /* line 221, ../scss/_overrides.scss */
   footer h5 {
     padding-top: 1%;
     padding-bottom: 2%;
@@ -9702,20 +9712,20 @@ footer h5 {
     margin-right: 5%;
   }
 }
-/* line 228, ../scss/_overrides.scss */
+/* line 234, ../scss/_overrides.scss */
 footer .social li {
   padding-top: 1rem;
   margin-left: .5rem;
 }
 @media (max-width: 40.313em) {
-  /* line 232, ../scss/_overrides.scss */
+  /* line 238, ../scss/_overrides.scss */
   footer .social {
     display: table;
   }
 }
 
 /*  Hero Unit  */
-/* line 242, ../scss/_overrides.scss */
+/* line 248, ../scss/_overrides.scss */
 .main-hero {
   height: 475px;
   background: url("../images/tripsprouthero.jpg") no-repeat center right;
@@ -9723,27 +9733,27 @@ footer .social li {
   overflow: hidden;
 }
 @media (max-width: 20em) {
-  /* line 242, ../scss/_overrides.scss */
+  /* line 248, ../scss/_overrides.scss */
   .main-hero {
     height: 550px;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 242, ../scss/_overrides.scss */
+  /* line 248, ../scss/_overrides.scss */
   .main-hero {
-    height: 600px;
+    height: 575px;
     margin: 0px auto;
     background-position: center;
     background-size: cover;
   }
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 242, ../scss/_overrides.scss */
+  /* line 248, ../scss/_overrides.scss */
   .main-hero {
     height: 450px;
   }
 }
-/* line 260, ../scss/_overrides.scss */
+/* line 266, ../scss/_overrides.scss */
 .main-hero h3 {
   font-size: 3.5em;
   font-weight: 500;
@@ -9751,14 +9761,14 @@ footer .social li {
   padding-left: 5.35714286rem;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 260, ../scss/_overrides.scss */
+  /* line 266, ../scss/_overrides.scss */
   .main-hero h3 {
     padding-left: 2%;
     font-size: 3em;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 260, ../scss/_overrides.scss */
+  /* line 266, ../scss/_overrides.scss */
   .main-hero h3 {
     text-align: center;
     font-size: 2.5em;
@@ -9767,19 +9777,19 @@ footer .social li {
   }
 }
 @media (max-width: 20em) {
-  /* line 260, ../scss/_overrides.scss */
+  /* line 266, ../scss/_overrides.scss */
   .main-hero h3 {
     font-size: 2.1em;
   }
 }
-/* line 280, ../scss/_overrides.scss */
+/* line 286, ../scss/_overrides.scss */
 .main-hero h4 {
   font-size: 1.5em;
   font-weight: 100;
   padding-top: 1.28571429rem;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 280, ../scss/_overrides.scss */
+  /* line 286, ../scss/_overrides.scss */
   .main-hero h4 {
     font-size: 1.3em;
     padding-left: 2%;
@@ -9787,7 +9797,7 @@ footer .social li {
   }
 }
 @media (max-width: 40.313em) {
-  /* line 280, ../scss/_overrides.scss */
+  /* line 286, ../scss/_overrides.scss */
   .main-hero h4 {
     font-size: 1.25em;
     text-align: center;
@@ -9796,22 +9806,22 @@ footer .social li {
   }
 }
 @media (max-width: 20em) {
-  /* line 280, ../scss/_overrides.scss */
+  /* line 286, ../scss/_overrides.scss */
   .main-hero h4 {
     font-size: 1.1em;
     margin: auto 10px;
   }
 }
-/* line 301, ../scss/_overrides.scss */
+/* line 307, ../scss/_overrides.scss */
 .main-hero a {
   margin-top: 5%;
 }
-/* line 304, ../scss/_overrides.scss */
+/* line 310, ../scss/_overrides.scss */
 .main-hero a:hover {
   background-color: #368DE8;
 }
 @media (max-width: 40.313em) {
-  /* line 301, ../scss/_overrides.scss */
+  /* line 307, ../scss/_overrides.scss */
   .main-hero a {
     font-size: 1.125em;
     display: block;
@@ -9819,28 +9829,28 @@ footer .social li {
   }
 }
 @media (max-width: 20em) {
-  /* line 301, ../scss/_overrides.scss */
+  /* line 307, ../scss/_overrides.scss */
   .main-hero a {
     margin: auto 5px;
   }
 }
-/* line 317, ../scss/_overrides.scss */
+/* line 323, ../scss/_overrides.scss */
 .main-hero img {
   margin-top: 25px;
 }
 @media (min-width: 641px) and (max-width: 767px) {
-  /* line 322, ../scss/_overrides.scss */
+  /* line 328, ../scss/_overrides.scss */
   .main-hero h3 {
     font-size: 2.85em;
     padding-top: 115px;
   }
-  /* line 326, ../scss/_overrides.scss */
+  /* line 332, ../scss/_overrides.scss */
   .main-hero h4 {
     font-size: 1.275em;
     max-width: 90%;
     padding-top: 1.375em;
   }
-  /* line 331, ../scss/_overrides.scss */
+  /* line 337, ../scss/_overrides.scss */
   .main-hero img {
     width: 100%;
     height: auto;
@@ -9849,69 +9859,64 @@ footer .social li {
 }
 
 /*  Project Thumbnails  */
-/* line 341, ../scss/_overrides.scss */
+/* line 347, ../scss/_overrides.scss */
 .project-1, .project-2, .project-3, .project-4 {
   height: 230px;
 }
 
-/* line 345, ../scss/_overrides.scss */
+/* line 351, ../scss/_overrides.scss */
 .project-1 {
   background: url("../images/yumshark-snapshot.jpg") no-repeat bottom center;
   background-color: #FF8B00;
 }
-/* line 348, ../scss/_overrides.scss */
+/* line 354, ../scss/_overrides.scss */
 .project-1 h3 {
   color: #FF8B00;
 }
 
-/* line 353, ../scss/_overrides.scss */
+/* line 359, ../scss/_overrides.scss */
 .project-2 {
   background: url("../images/jottly-snapshot.jpg") no-repeat bottom center;
   background-color: #87C145;
 }
-/* line 356, ../scss/_overrides.scss */
+/* line 362, ../scss/_overrides.scss */
 .project-2 h3 {
   color: #87C145;
 }
 
-/* line 361, ../scss/_overrides.scss */
+/* line 367, ../scss/_overrides.scss */
 .project-3 {
   background-color: #617890;
 }
-/* line 363, ../scss/_overrides.scss */
+/* line 369, ../scss/_overrides.scss */
 .project-3 h3 {
   color: #617890;
 }
 
-/* line 368, ../scss/_overrides.scss */
+/* line 374, ../scss/_overrides.scss */
 .project-4 {
   background: url("../images/author-snapshot.jpg") no-repeat bottom center;
   background-color: #87D0D9;
 }
-/* line 371, ../scss/_overrides.scss */
+/* line 377, ../scss/_overrides.scss */
 .project-4 h3 {
   color: #87D0D9;
 }
 
-/* line 376, ../scss/_overrides.scss */
-.quarter {
-  width: 25%;
+/*3 Projects =third - 4 Projects =quarter */
+/* line 382, ../scss/_overrides.scss */
+.third {
+  width: 33.33333%;
   float: left;
 }
-@media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 376, ../scss/_overrides.scss */
-  .quarter {
-    width: 50%;
-  }
-}
 @media (max-width: 40.313em) {
-  /* line 376, ../scss/_overrides.scss */
-  .quarter {
+  /* line 382, ../scss/_overrides.scss */
+  .third {
     width: 100%;
   }
 }
 
-/* line 387, ../scss/_overrides.scss */
+/* line 390, ../scss/_overrides.scss */
 #image-overlay {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
@@ -9924,26 +9929,26 @@ footer .social li {
   -ms-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
-/* line 398, ../scss/_overrides.scss */
+/* line 401, ../scss/_overrides.scss */
 #image-overlay h3 {
   font-size: 2em;
   font-weight: 500;
   padding-top: 25px;
 }
-/* line 403, ../scss/_overrides.scss */
+/* line 406, ../scss/_overrides.scss */
 #image-overlay h5 {
   font-size: 0.875em;
   font-weight: 100;
   color: #e3e2e2;
 }
-/* line 408, ../scss/_overrides.scss */
+/* line 411, ../scss/_overrides.scss */
 #image-overlay p {
   color: #e3e2e2;
   font-size: 0.938em;
   padding-top: 15px;
 }
 
-/* line 415, ../scss/_overrides.scss */
+/* line 418, ../scss/_overrides.scss */
 .project-1:hover #image-overlay, .project-2:hover #image-overlay,
 .project-3:hover #image-overlay, .project-4:hover #image-overlay {
   opacity: 1;
@@ -9951,57 +9956,63 @@ footer .social li {
 }
 
 /* Hello I'm Justin  */
-/* line 422, ../scss/_overrides.scss */
+/* line 425, ../scss/_overrides.scss */
 .hello {
   height: auto;
   padding-top: 50px;
   padding-bottom: 80px;
 }
 @media (max-width: 40.313em) {
-  /* line 422, ../scss/_overrides.scss */
+  /* line 425, ../scss/_overrides.scss */
   .hello {
     text-align: center;
     padding-bottom: 50px;
   }
 }
-/* line 430, ../scss/_overrides.scss */
+/* line 433, ../scss/_overrides.scss */
 .hello .hello-content {
   padding-left: 2.188em;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 430, ../scss/_overrides.scss */
+  /* line 433, ../scss/_overrides.scss */
   .hello .hello-content {
     padding-left: 2.188em;
     max-width: 85%;
   }
 }
-/* line 437, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 433, ../scss/_overrides.scss */
+  .hello .hello-content {
+    padding-left: .5em;
+  }
+}
+/* line 443, ../scss/_overrides.scss */
 .hello h2 {
   font-size: 3.25em;
   color: #368DE8;
 }
-/* line 440, ../scss/_overrides.scss */
+/* line 446, ../scss/_overrides.scss */
 .hello h2 span {
   font-weight: 700;
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 437, ../scss/_overrides.scss */
+  /* line 443, ../scss/_overrides.scss */
   .hello h2 {
     font-size: 2.75em;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 437, ../scss/_overrides.scss */
+  /* line 443, ../scss/_overrides.scss */
   .hello h2 {
     font-size: 2.5em;
   }
 }
-/* line 450, ../scss/_overrides.scss */
+/* line 456, ../scss/_overrides.scss */
 .hello p {
   font-size: 1.25em;
 }
 @media (max-width: 40.313em) {
-  /* line 450, ../scss/_overrides.scss */
+  /* line 456, ../scss/_overrides.scss */
   .hello p {
     font-size: 1.025em;
     margin-left: 5.5%;
@@ -10010,28 +10021,28 @@ footer .social li {
   }
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 450, ../scss/_overrides.scss */
+  /* line 456, ../scss/_overrides.scss */
   .hello p {
     font-size: 1.125em;
   }
 }
-/* line 461, ../scss/_overrides.scss */
+/* line 467, ../scss/_overrides.scss */
 .hello p a {
   color: #368DE8;
 }
-/* line 464, ../scss/_overrides.scss */
+/* line 470, ../scss/_overrides.scss */
 .hello p span {
   font-weight: 700;
 }
-/* line 468, ../scss/_overrides.scss */
+/* line 474, ../scss/_overrides.scss */
 .hello ul {
   padding-top: 50px;
 }
-/* line 470, ../scss/_overrides.scss */
+/* line 476, ../scss/_overrides.scss */
 .hello ul li {
   padding-bottom: 15px;
 }
-/* line 474, ../scss/_overrides.scss */
+/* line 480, ../scss/_overrides.scss */
 .hello .icons-small {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -10039,75 +10050,206 @@ footer .social li {
   justify-content: center;
   align-items: center;
 }
-/* line 480, ../scss/_overrides.scss */
+/* line 486, ../scss/_overrides.scss */
 .hello .icons-small li {
   width: 65px;
   margin-left: 1.25rem;
 }
+/* line 490, ../scss/_overrides.scss */
+.hello .icons-small li:nth-child(1) {
+  margin-left: 0rem;
+}
 @media (min-width: 40em) {
-  /* line 474, ../scss/_overrides.scss */
+  /* line 480, ../scss/_overrides.scss */
   .hello .icons-small {
     display: none;
   }
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 488, ../scss/_overrides.scss */
+  /* line 497, ../scss/_overrides.scss */
   .hello .icons-large {
     padding-top: 35px;
   }
 }
 @media (min-width: 40.375em) and (max-width: 64em) {
-  /* line 492, ../scss/_overrides.scss */
+  /* line 501, ../scss/_overrides.scss */
   .hello .icons-large li {
     width: 115px;
   }
 }
 @media (max-width: 40.313em) {
-  /* line 488, ../scss/_overrides.scss */
+  /* line 497, ../scss/_overrides.scss */
   .hello .icons-large {
     display: none;
   }
 }
 @media (min-width: 646px) and (max-width: 754px) {
-  /* line 502, ../scss/_overrides.scss */
+  /* line 511, ../scss/_overrides.scss */
   .hello .icons-large {
     padding-left: 0;
     padding-top: 50px;
   }
-  /* line 505, ../scss/_overrides.scss */
+  /* line 514, ../scss/_overrides.scss */
   .hello .icons-large li {
     width: 100px;
   }
-  /* line 509, ../scss/_overrides.scss */
+  /* line 518, ../scss/_overrides.scss */
   .hello p {
     font-size: 1.1em;
   }
 }
 
+/* line 525, ../scss/_overrides.scss */
+.contact-page-heading {
+  padding-top: 12%;
+  padding-bottom: 1%;
+}
+/* line 528, ../scss/_overrides.scss */
+.contact-page-heading h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #368DE8;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 528, ../scss/_overrides.scss */
+  .contact-page-heading h2 {
+    font-size: 2.75em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 528, ../scss/_overrides.scss */
+  .contact-page-heading h2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+/* line 540, ../scss/_overrides.scss */
+.contact-page-heading p {
+  font-size: 1.125em;
+}
+/* line 542, ../scss/_overrides.scss */
+.contact-page-heading p span {
+  font-weight: 500;
+}
+@media (max-width: 40.313em) {
+  /* line 540, ../scss/_overrides.scss */
+  .contact-page-heading p {
+    font-size: 1.025em;
+    text-align: center;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    padding-top: 5%;
+  }
+}
+
+/* line 555, ../scss/_overrides.scss */
+.contact-form-wrapper {
+  background-color: rgba(196, 220, 246, 0.4);
+}
+
+/* line 559, ../scss/_overrides.scss */
+.contact-form {
+  padding-top: 3%;
+  padding-bottom: 12%;
+  height: 100%;
+}
+/* line 563, ../scss/_overrides.scss */
+.contact-form input::-webkit-input-placeholder {
+  color: #617890;
+}
+/* line 566, ../scss/_overrides.scss */
+.contact-form placeholder:-moz-placeholder {
+  /* Firefox 18- */
+  color: #617890;
+}
+/* line 569, ../scss/_overrides.scss */
+.contact-form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #617890;
+}
+/* line 572, ../scss/_overrides.scss */
+.contact-form input:-ms-input-placeholder {
+  color: #617890;
+}
+/* line 575, ../scss/_overrides.scss */
+.contact-form textarea::-webkit-input-placeholder {
+  color: #617890;
+}
+/* line 578, ../scss/_overrides.scss */
+.contact-form textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #617890;
+}
+/* line 581, ../scss/_overrides.scss */
+.contact-form textarea:-ms-input-placeholder {
+  color: #617890;
+}
+/* line 584, ../scss/_overrides.scss */
+.contact-form textarea {
+  height: 175px;
+}
+
+/* line 589, ../scss/_overrides.scss */
+.submit-button {
+  background-color: #368DE8;
+  margin-top: 2%;
+}
+/* line 593, ../scss/_overrides.scss */
+.submit-button:hover {
+  color: #368DE8;
+  background-color: #fff;
+}
+
 /** HERO UNIT **/
-/* line 518, ../scss/_overrides.scss */
+/* line 601, ../scss/_overrides.scss */
 .casestudy-hero {
   height: 800px;
   text-align: center;
   position: relative;
 }
-/* line 523, ../scss/_overrides.scss */
-.casestudy-hero img {
-  padding-top: 10%;
+@media (max-width: 40.313em) {
+  /* line 601, ../scss/_overrides.scss */
+  .casestudy-hero {
+    height: 650px;
+  }
 }
-/* line 527, ../scss/_overrides.scss */
+/* line 609, ../scss/_overrides.scss */
+.casestudy-hero .casestudy-hero-logo {
+  padding-top: 15%;
+}
+@media (max-width: 40.313em) {
+  /* line 609, ../scss/_overrides.scss */
+  .casestudy-hero .casestudy-hero-logo {
+    padding-top: 20%;
+  }
+}
+/* line 616, ../scss/_overrides.scss */
 .casestudy-hero h2 {
   font-size: 3.25em;
   font-weight: 500;
   padding-top: 3%;
 }
-/* line 532, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 616, ../scss/_overrides.scss */
+  .casestudy-hero h2 {
+    font-size: 2em;
+  }
+}
+/* line 624, ../scss/_overrides.scss */
 .casestudy-hero h3 {
   font-size: 1.75em;
   font-weight: 100;
   padding: 0, 50%, 10%, 50%;
 }
-/* line 538, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 624, ../scss/_overrides.scss */
+  .casestudy-hero h3 {
+    font-size: 1.2em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/* line 635, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration {
   height: 165px;
   background-color: rgba(97, 120, 144, 0.5);
@@ -10116,47 +10258,80 @@ footer .social li {
   bottom: 0;
   left: 0;
 }
-/* line 545, ../scss/_overrides.scss */
+/* line 642, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration h4 {
   font-family: "museo-sans";
   font-style: italic;
   font-size: 1.25em;
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 551, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 642, ../scss/_overrides.scss */
+  .casestudy-hero .skill-demonstration h4 {
+    font-size: 1em;
+  }
+}
+/* line 651, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration ul {
   display: inline-block;
   margin: 0 auto;
   padding-top: 25px;
 }
-/* line 556, ../scss/_overrides.scss */
+/* line 655, ../scss/_overrides.scss */
+.casestudy-hero .skill-demonstration ul li:nth-child(1) {
+  margin-left: 0px;
+}
+/* line 659, ../scss/_overrides.scss */
 .casestudy-hero .skill-demonstration ul li img {
   height: 65px;
   width: auto;
+  padding-top: 10%;
+}
+@media (max-width: 40.313em) {
+  /* line 659, ../scss/_overrides.scss */
+  .casestudy-hero .skill-demonstration ul li img {
+    height: 55px;
+  }
 }
 
 /** HERO UNIT **/
-/* line 565, ../scss/_overrides.scss */
+/* line 672, ../scss/_overrides.scss */
 .tripsprout-bg {
   background: url("../images/tripsproutherolarge.jpg") no-repeat top center;
   background-size: cover;
 }
+/* line 675, ../scss/_overrides.scss */
+.tripsprout-bg .casestudy-hero-logo {
+  padding-top: 10%;
+}
+@media (max-width: 40.313em) {
+  /* line 675, ../scss/_overrides.scss */
+  .tripsprout-bg .casestudy-hero-logo {
+    padding-top: 17%;
+  }
+}
 
 /** MAIN ARTICLE **/
-/* line 571, ../scss/_overrides.scss */
+/* line 684, ../scss/_overrides.scss */
 #trip-sprout-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 573, ../scss/_overrides.scss */
+/* line 686, ../scss/_overrides.scss */
 #trip-sprout-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 577, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 686, ../scss/_overrides.scss */
+  #trip-sprout-casestudy .project-intro p {
+    font-size: 1em;
+  }
+}
+/* line 693, ../scss/_overrides.scss */
 #trip-sprout-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 581, ../scss/_overrides.scss */
+/* line 697, ../scss/_overrides.scss */
 #trip-sprout-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -10166,83 +10341,131 @@ footer .social li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 590, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 697, ../scss/_overrides.scss */
+  #trip-sprout-casestudy h4 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 697, ../scss/_overrides.scss */
+  #trip-sprout-casestudy h4 {
+    font-size: 1.5em;
+  }
+}
+/* line 712, ../scss/_overrides.scss */
 #trip-sprout-casestudy p {
-  font-size: 22px;
+  font-size: 1.375em;
   padding-bottom: 3.25%;
 }
-/* line 594, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 712, ../scss/_overrides.scss */
+  #trip-sprout-casestudy p {
+    font-size: 1.2em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 712, ../scss/_overrides.scss */
+  #trip-sprout-casestudy p {
+    font-size: .938em;
+    padding-left: .5em;
+  }
+}
+/* line 725, ../scss/_overrides.scss */
 #trip-sprout-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 597, ../scss/_overrides.scss */
+/* line 728, ../scss/_overrides.scss */
 #trip-sprout-casestudy .italic-span {
   font-style: italic;
 }
-/* line 600, ../scss/_overrides.scss */
+/* line 731, ../scss/_overrides.scss */
 #trip-sprout-casestudy ul {
-  font-size: 20px;
-  font-family: "museo-sans";
+  font-size: 1.250em;
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 100;
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 606, ../scss/_overrides.scss */
+/* line 737, ../scss/_overrides.scss */
 #trip-sprout-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 610, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 731, ../scss/_overrides.scss */
+  #trip-sprout-casestudy ul {
+    font-size: 1.2em;
+    padding-left: 9%;
+    padding-right: 3%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 731, ../scss/_overrides.scss */
+  #trip-sprout-casestudy ul {
+    font-size: .938em;
+    padding-right: 10%;
+  }
+}
+/* line 750, ../scss/_overrides.scss */
 #trip-sprout-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
 }
-/* line 615, ../scss/_overrides.scss */
+/* line 755, ../scss/_overrides.scss */
 #trip-sprout-casestudy .budget-dilemma-hero {
   background: url("../images/budget-dilemma-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 550px;
 }
-/* line 621, ../scss/_overrides.scss */
+/* line 761, ../scss/_overrides.scss */
 #trip-sprout-casestudy .budget-dilemma-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 624, ../scss/_overrides.scss */
+/* line 764, ../scss/_overrides.scss */
 #trip-sprout-casestudy .teacher-designed-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
 }
-/* line 627, ../scss/_overrides.scss */
+/* line 767, ../scss/_overrides.scss */
 #trip-sprout-casestudy .sass-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 631, ../scss/_overrides.scss */
+/* line 771, ../scss/_overrides.scss */
 #trip-sprout-casestudy .sass-wrapper .sass-foundation a:hover {
   background-color: #368DE8;
 }
 
 /** HERO UNIT **/
-/* line 640, ../scss/_overrides.scss */
+/* line 780, ../scss/_overrides.scss */
 .yumshark-bg {
   background: url("../images/yumshark-hero.jpg") no-repeat bottom center;
   background-size: cover;
 }
 
 /** MAIN ARTICLE **/
-/* line 646, ../scss/_overrides.scss */
+/* line 786, ../scss/_overrides.scss */
 #yumshark-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 648, ../scss/_overrides.scss */
+/* line 788, ../scss/_overrides.scss */
 #yumshark-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 652, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 788, ../scss/_overrides.scss */
+  #yumshark-casestudy .project-intro p {
+    font-size: 1em;
+  }
+}
+/* line 795, ../scss/_overrides.scss */
 #yumshark-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 656, ../scss/_overrides.scss */
+/* line 799, ../scss/_overrides.scss */
 #yumshark-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -10252,79 +10475,139 @@ footer .social li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 665, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 799, ../scss/_overrides.scss */
+  #yumshark-casestudy h4 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 799, ../scss/_overrides.scss */
+  #yumshark-casestudy h4 {
+    font-size: 1.5em;
+  }
+}
+/* line 814, ../scss/_overrides.scss */
 #yumshark-casestudy p {
   font-size: 22px;
   padding-bottom: 3.25%;
 }
-/* line 669, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 814, ../scss/_overrides.scss */
+  #yumshark-casestudy p {
+    font-size: 1.2em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 814, ../scss/_overrides.scss */
+  #yumshark-casestudy p {
+    font-size: .938em;
+    padding-left: .5em;
+  }
+}
+/* line 827, ../scss/_overrides.scss */
 #yumshark-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 672, ../scss/_overrides.scss */
+/* line 830, ../scss/_overrides.scss */
 #yumshark-casestudy .italic-span {
   font-style: italic;
 }
-/* line 675, ../scss/_overrides.scss */
+/* line 833, ../scss/_overrides.scss */
 #yumshark-casestudy ul {
   font-size: 20px;
-  font-family: "museo-sans";
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 100;
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 681, ../scss/_overrides.scss */
+/* line 839, ../scss/_overrides.scss */
 #yumshark-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 685, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 833, ../scss/_overrides.scss */
+  #yumshark-casestudy ul {
+    font-size: 1.2em;
+    padding-left: 9%;
+    padding-right: 3%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 833, ../scss/_overrides.scss */
+  #yumshark-casestudy ul {
+    font-size: .938em;
+    padding-right: 10%;
+  }
+}
+/* line 852, ../scss/_overrides.scss */
 #yumshark-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
 }
-/* line 690, ../scss/_overrides.scss */
+/* line 857, ../scss/_overrides.scss */
 #yumshark-casestudy .research-discovery-hero {
   background: url("../images/research-discovery-hero.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 550px;
 }
-/* line 696, ../scss/_overrides.scss */
+/* line 863, ../scss/_overrides.scss */
 #yumshark-casestudy .research-discovery-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
 }
-/* line 699, ../scss/_overrides.scss */
+/* line 866, ../scss/_overrides.scss */
 #yumshark-casestudy .prototyping-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 702, ../scss/_overrides.scss */
+/* line 869, ../scss/_overrides.scss */
 #yumshark-casestudy .iteration-wrapper {
   background-color: rgba(196, 220, 246, 0.4);
 }
 
 /** HERO UNIT **/
-/* line 709, ../scss/_overrides.scss */
+/* line 876, ../scss/_overrides.scss */
 .jottly-bg {
-  background: url("../images/jottlyhero.jpg") no-repeat bottom center;
+  background: url("../images/jottlyhero.jpg") no-repeat center top;
   background-size: cover;
+}
+/* line 879, ../scss/_overrides.scss */
+.jottly-bg .casestudy-hero-logo {
+  padding-top: 150px;
+  padding-bottom: 1%;
+}
+@media (max-width: 40.313em) {
+  /* line 879, ../scss/_overrides.scss */
+  .jottly-bg .casestudy-hero-logo {
+    padding-top: 25%;
+    padding-bottom: 7%;
+  }
 }
 
 /** MAIN ARTICLE **/
-/* line 715, ../scss/_overrides.scss */
+/* line 890, ../scss/_overrides.scss */
 #jottly-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 717, ../scss/_overrides.scss */
+/* line 892, ../scss/_overrides.scss */
 #jottly-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 721, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 892, ../scss/_overrides.scss */
+  #jottly-casestudy .project-intro p {
+    font-size: 1em;
+  }
+}
+/* line 899, ../scss/_overrides.scss */
 #jottly-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 725, ../scss/_overrides.scss */
+/* line 903, ../scss/_overrides.scss */
 #jottly-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -10334,72 +10617,132 @@ footer .social li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 734, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 903, ../scss/_overrides.scss */
+  #jottly-casestudy h4 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 903, ../scss/_overrides.scss */
+  #jottly-casestudy h4 {
+    font-size: 1.5em;
+  }
+}
+/* line 918, ../scss/_overrides.scss */
 #jottly-casestudy p {
   font-size: 22px;
   padding-bottom: 3.25%;
 }
-/* line 738, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 918, ../scss/_overrides.scss */
+  #jottly-casestudy p {
+    font-size: 1.2em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 918, ../scss/_overrides.scss */
+  #jottly-casestudy p {
+    font-size: .938em;
+    padding-left: .5em;
+  }
+}
+/* line 931, ../scss/_overrides.scss */
 #jottly-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 741, ../scss/_overrides.scss */
+/* line 934, ../scss/_overrides.scss */
 #jottly-casestudy .italic-span {
   font-style: italic;
 }
-/* line 744, ../scss/_overrides.scss */
+/* line 937, ../scss/_overrides.scss */
 #jottly-casestudy ul {
   font-size: 20px;
-  font-family: "museo-sans";
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 500;
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 750, ../scss/_overrides.scss */
+/* line 943, ../scss/_overrides.scss */
 #jottly-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 754, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 937, ../scss/_overrides.scss */
+  #jottly-casestudy ul {
+    font-size: 1.2em;
+    padding-left: 9%;
+    padding-right: 3%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 937, ../scss/_overrides.scss */
+  #jottly-casestudy ul {
+    font-size: .938em;
+    padding-right: 10%;
+  }
+}
+/* line 956, ../scss/_overrides.scss */
 #jottly-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
 }
-/* line 759, ../scss/_overrides.scss */
+/* line 961, ../scss/_overrides.scss */
 #jottly-casestudy .jottly-intro-wrapper {
   background-color: rgba(97, 120, 144, 0.3);
 }
-/* line 762, ../scss/_overrides.scss */
+/* line 964, ../scss/_overrides.scss */
 #jottly-casestudy .jottly-wireframe-wrapper {
   background-color: rgba(97, 120, 144, 0.4);
 }
-/* line 767, ../scss/_overrides.scss */
+/* line 969, ../scss/_overrides.scss */
 #jottly-casestudy .jottly-live a:hover {
   background-color: #368DE8;
 }
 
 /** HERO UNIT **/
-/* line 775, ../scss/_overrides.scss */
+/* line 977, ../scss/_overrides.scss */
 .smt-bg {
-  background: url("../images/smthero-2.jpg") no-repeat bottom center;
+  background: url("../images/smthero.jpg") no-repeat bottom center;
   background-size: cover;
+}
+/* line 980, ../scss/_overrides.scss */
+.smt-bg .casestudy-hero-logo {
+  padding-top: 100px;
+  padding-bottom: 1%;
+}
+@media (max-width: 40.313em) {
+  /* line 980, ../scss/_overrides.scss */
+  .smt-bg .casestudy-hero-logo {
+    padding-top: 65px;
+    padding-bottom: 3%;
+  }
 }
 
 /** MAIN ARTICLE **/
-/* line 781, ../scss/_overrides.scss */
+/* line 991, ../scss/_overrides.scss */
 #smt-casestudy .project-intro {
   padding-top: 5%;
 }
-/* line 783, ../scss/_overrides.scss */
+/* line 993, ../scss/_overrides.scss */
 #smt-casestudy .project-intro p {
   font-size: 1.625em;
 }
-/* line 787, ../scss/_overrides.scss */
+@media (max-width: 40.313em) {
+  /* line 993, ../scss/_overrides.scss */
+  #smt-casestudy .project-intro p {
+    font-size: 1em;
+  }
+}
+/* line 1000, ../scss/_overrides.scss */
 #smt-casestudy section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-/* line 791, ../scss/_overrides.scss */
+/* line 1004, ../scss/_overrides.scss */
 #smt-casestudy h4 {
   font-family: "museo-sans";
   font-weight: 700;
@@ -10409,34 +10752,291 @@ footer .social li {
   padding-bottom: 2%;
   text-align: center;
 }
-/* line 800, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1004, ../scss/_overrides.scss */
+  #smt-casestudy h4 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1004, ../scss/_overrides.scss */
+  #smt-casestudy h4 {
+    font-size: 1.5em;
+  }
+}
+/* line 1019, ../scss/_overrides.scss */
 #smt-casestudy p {
   font-size: 22px;
   padding-bottom: 3.25%;
 }
-/* line 804, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1019, ../scss/_overrides.scss */
+  #smt-casestudy p {
+    font-size: 1.2em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1019, ../scss/_overrides.scss */
+  #smt-casestudy p {
+    font-size: .938em;
+    padding-left: .5em;
+  }
+}
+/* line 1032, ../scss/_overrides.scss */
 #smt-casestudy .bold-span {
   font-weight: 500;
 }
-/* line 807, ../scss/_overrides.scss */
+/* line 1035, ../scss/_overrides.scss */
 #smt-casestudy .italic-span {
   font-style: italic;
 }
-/* line 810, ../scss/_overrides.scss */
+/* line 1038, ../scss/_overrides.scss */
 #smt-casestudy ul {
   font-size: 20px;
-  font-family: "museo-sans";
+  font-family: "museo-sans", Arial, sans-serif;
   font-weight: 100;
   max-width: 95%;
   padding-left: 7%;
 }
-/* line 816, ../scss/_overrides.scss */
+/* line 1044, ../scss/_overrides.scss */
 #smt-casestudy ul li {
   padding-bottom: 10px;
 }
-/* line 820, ../scss/_overrides.scss */
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1038, ../scss/_overrides.scss */
+  #smt-casestudy ul {
+    font-size: 1.2em;
+    padding-left: 9%;
+    padding-right: 3%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1038, ../scss/_overrides.scss */
+  #smt-casestudy ul {
+    font-size: .938em;
+    padding-right: 10%;
+  }
+}
+/* line 1057, ../scss/_overrides.scss */
 #smt-casestudy img {
   padding-top: 3.25%;
   padding-bottom: 6.5%;
   width: 100%;
+}
+/* line 1062, ../scss/_overrides.scss */
+#smt-casestudy .smt-concepts-wrapper {
+  background-color: rgba(196, 220, 246, 0.4);
+}
+
+/* line 1068, ../scss/_overrides.scss */
+.about-bg {
+  background: url("../images/JustinGolowniaPortrait.jpg") no-repeat top center;
+  background-size: cover;
+}
+/* line 1071, ../scss/_overrides.scss */
+.about-bg h2 {
+  font-weight: 100;
+  text-align: left;
+  font-size: 3.75em;
+  text-transform: uppercase;
+  margin: -10px auto;
+  padding-top: 5px;
+  padding-left: 2%;
+}
+/* line 1079, ../scss/_overrides.scss */
+.about-bg h2 span {
+  font-weight: 500;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1071, ../scss/_overrides.scss */
+  .about-bg h2 {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1071, ../scss/_overrides.scss */
+  .about-bg h2 {
+    font-size: 2.75em;
+    text-align: right;
+  }
+}
+/* line 1090, ../scss/_overrides.scss */
+.about-bg .about-me-heading {
+  padding-top: 10%;
+  padding-right: 3.5%;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1090, ../scss/_overrides.scss */
+  .about-bg .about-me-heading {
+    padding-top: 12%;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1090, ../scss/_overrides.scss */
+  .about-bg .about-me-heading {
+    padding-top: 35%;
+  }
+}
+
+/* line 1102, ../scss/_overrides.scss */
+.about-quote {
+  height: 180px;
+  background-color: rgba(97, 120, 144, 0.5);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+/* line 1109, ../scss/_overrides.scss */
+.about-quote h4 {
+  font-family: "museo-sans";
+  font-style: italic;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 55px;
+}
+@media (max-width: 40.313em) {
+  /* line 1109, ../scss/_overrides.scss */
+  .about-quote h4 {
+    font-size: 1.2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 35px;
+  }
+}
+/* line 1123, ../scss/_overrides.scss */
+.about-quote h5 {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 55px;
+}
+@media (max-width: 40.313em) {
+  /* line 1123, ../scss/_overrides.scss */
+  .about-quote h5 {
+    top: 35px;
+  }
+}
+
+/* line 1134, ../scss/_overrides.scss */
+#justins-story .story-intro {
+  padding-top: 5%;
+}
+/* line 1136, ../scss/_overrides.scss */
+#justins-story .story-intro p {
+  font-size: 1.625em;
+}
+@media (max-width: 40.313em) {
+  /* line 1136, ../scss/_overrides.scss */
+  #justins-story .story-intro p {
+    font-size: 1em;
+  }
+}
+/* line 1143, ../scss/_overrides.scss */
+#justins-story section {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+/* line 1147, ../scss/_overrides.scss */
+#justins-story h4 {
+  font-family: "museo-sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1147, ../scss/_overrides.scss */
+  #justins-story h4 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1147, ../scss/_overrides.scss */
+  #justins-story h4 {
+    font-size: 1.5em;
+  }
+}
+/* line 1162, ../scss/_overrides.scss */
+#justins-story p {
+  font-size: 22px;
+  padding-bottom: 3.25%;
+}
+@media (min-width: 40.375em) and (max-width: 64em) {
+  /* line 1162, ../scss/_overrides.scss */
+  #justins-story p {
+    font-size: 1.2em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 40.313em) {
+  /* line 1162, ../scss/_overrides.scss */
+  #justins-story p {
+    font-size: .938em;
+    padding-left: .5em;
+  }
+}
+/* line 1175, ../scss/_overrides.scss */
+#justins-story .bold-span {
+  font-weight: 500;
+}
+/* line 1178, ../scss/_overrides.scss */
+#justins-story .italic-span {
+  font-style: italic;
+}
+/* line 1181, ../scss/_overrides.scss */
+#justins-story img {
+  padding-top: 3.25%;
+  padding-bottom: 6.5%;
+  width: 100%;
+}
+/* line 1187, ../scss/_overrides.scss */
+#justins-story .begin-hero {
+  height: 300px;
+  background: url("../images/colorpencils.jpg") repeat;
+}
+@media (max-width: 40.313em) {
+  /* line 1187, ../scss/_overrides.scss */
+  #justins-story .begin-hero {
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+/* line 1197, ../scss/_overrides.scss */
+#justins-story .begin {
+  border-top: 20px solid #617890;
+}
+/* line 1201, ../scss/_overrides.scss */
+#justins-story .first-lesson-wrapper, #justins-story .building-blocs-wrapper {
+  background-color: rgba(196, 220, 246, 0.4);
+}
+/* line 1205, ../scss/_overrides.scss */
+#justins-story .conclusion-hero {
+  height: auto;
+  background-color: #617890;
+}
+/* line 1208, ../scss/_overrides.scss */
+#justins-story .conclusion-hero blockquote {
+  font-family: "museo-sans", Arial, sans-serif;
+  font-size: 1.75em;
+  font-weight: 100;
+  color: #fff;
+  padding: 15px auto;
+}
+/* line 1214, ../scss/_overrides.scss */
+#justins-story .conclusion-hero blockquote cite {
+  color: #fff;
+}
+@media (max-width: 40.313em) {
+  /* line 1208, ../scss/_overrides.scss */
+  #justins-story .conclusion-hero blockquote {
+    font-size: 1.125em;
+  }
 }
